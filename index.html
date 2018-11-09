@@ -1,38 +1,14 @@
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wolfkhan66</title>
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="js/phaser.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/site.css">
-  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/utility.js"></script>
+  <div id="header"></div>
 </head>
-
 <body>
-  <div class="navbar navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#"></a>
-      </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
+  <div id="navigation"></div>
   <p></p>
   <div class="row profileBanner" id="ProfileBanner">
     <div class="thumbnail profileBanner">
-      <img src="../imgs/profile_icon.png">
+      <img src="imgs/profile_icon.png">
       <div class="caption" style="text-align:center">
         <h3>Cai Lehwald</h3>
         <p>Web, Game and Software Developer</p>
@@ -46,71 +22,19 @@
       <div class="row">
         <div class="col-sm-8 col-md-8 col-lg-8" id="Projects">
           <h3 class="col-sm-offset-1">Latest Projects</h3>
-          <hr />
-          <div class="media">
-            <div class="media-left pull-left">
-              <a href="#"> <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="../imgs/profile_icon.png" data-holder-rendered="true" style="width: 64px; height: 64px;">
-              </a>
-            </div>
-            <div class="media-body">
-              <h4 class="media-heading">Croaked - A Multiplayer Arcade Game</h4>
-              A 2d arcade web game written with javascript, node.js and the Phaser.io framework.
-            </div>
-          </div>
-          <div class="media">
-            <div class="media-left pull-left">
-              <a href="#"> <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="../imgs/profile_icon.png" data-holder-rendered="true" style="width: 64px; height: 64px;">
-              </a>
-            </div>
-            <div class="media-body">
-              <h4 class="media-heading">AI Behaviour Models: A Practical Example</h4>
-              A simple Phasio.io game written in JavaScript to show a finite state machine AI and a Utility System AI in action.
-            </div>
-          </div>
-          <div class="media">
-            <div class="media-left pull-left">
-              <a href="#"> <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="../imgs/profile_icon.png" data-holder-rendered="true" style="width: 64px; height: 64px;">
-              </a>
-            </div>
-            <div class="media-body">
-              <h4 class="media-heading">InExile</h4>
-              2D brawler platformer written in JavaScript using the Phaser.io framework
-            </div>
-          </div>
-          <div class="media">
-            <div class="media-left pull-left">
-              <a href="#"> <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="../imgs/profile_icon.png" data-holder-rendered="true" style="width: 64px; height: 64px;">
-              </a>
-            </div>
-            <div class="media-body">
-              <h4 class="media-heading">Map Generator and A* AI</h4>
-              A 2d procedural map generator written in javascript with the Phaser.io framework. Contains an A* pathfinder AI to show each map is valid.
-            </div>
-          </div>
-          <div class="media">
-            <div class="media-left pull-left">
-              <a href="#"> <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="../imgs/profile_icon.png" data-holder-rendered="true" style="width: 64px; height: 64px;">
-              </a>
-            </div>
-            <div class="media-body">
-              <h4 class="media-heading">Escc.Umbraco.EditorTools</h4>
-              Adds a new section to the Umbraco back office that displays additional information and tools for editors.
-            </div>
-          </div>
+          <hr/>
+          <div id="projectList"></div>
         </div>
         <div class="col-sm-4 col-md-4 col-lg-4" id="AboutMe">
           <h3 class="col-sm-offset-1">About Me</h3>
-          <hr />
+          <hr/>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis urna rhoncus, varius diam eu, varius ante.
-            Donec molestie, turpis id commodo lacinia, odio neque commodo tellus, sed commodo arcu dolor quis ligula.
-            Aenean vel odio id tortor tincidunt aliquet eget et ligula. Ut pharetra quam ut massa condimentum rutrum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis urna rhoncus, varius diam eu, varius ante. Donec molestie, turpis id commodo lacinia, odio neque commodo tellus, sed commodo arcu dolor quis ligula. Aenean vel odio id tortor
+            tincidunt aliquet eget et ligula. Ut pharetra quam ut massa condimentum rutrum.
           </p>
           <p>
-            Proin convallis malesuada massa, elementum pretium erat mattis et. Suspendisse vitae eros in neque posuere pulvinar.
-            Donec fermentum, mi non ultricies dignissim, augue erat hendrerit lectus, eu faucibus urna mauris quis ex.
-            Morbi eu nunc est. Aliquam erat nulla, hendrerit eu feugiat vulputate, accumsan vel magna.
-            Maecenas at turpis ac lacus facilisis lobortis sit amet nec diam. Sed ut neque faucibus, pulvinar odio sit amet, finibus risus.
+            Proin convallis malesuada massa, elementum pretium erat mattis et. Suspendisse vitae eros in neque posuere pulvinar. Donec fermentum, mi non ultricies dignissim, augue erat hendrerit lectus, eu faucibus urna mauris quis ex. Morbi eu nunc est. Aliquam
+            erat nulla, hendrerit eu feugiat vulputate, accumsan vel magna. Maecenas at turpis ac lacus facilisis lobortis sit amet nec diam. Sed ut neque faucibus, pulvinar odio sit amet, finibus risus.
           </p>
         </div>
       </div>
@@ -119,12 +43,11 @@
       $("#ProfileBanner").hide();
       $("#Projects").hide();
       $("#AboutMe").hide();
-      $("#ProfileBanner").fadeIn(2000);
-      $("#Projects").fadeIn(2500);
-      $("#AboutMe").fadeIn(3000);
+      $("#ProfileBanner").fadeIn(2000, function () {
+        $("#Projects").fadeIn(2000, function () {
+          $("#AboutMe").fadeIn(2000);
+        });
+      });
     </script>
-  </div>
-  </div>
-</body>
-
+  </body>
 </html>
