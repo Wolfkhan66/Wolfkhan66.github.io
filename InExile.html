@@ -1,14 +1,49 @@
 <head>
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/utility.js"></script>
+  <script type="text/javascript" src="projects/InExile/js/phaser.min.js"></script>
+  <script type="text/javascript" src="projects/InExile/js/Controls.js"></script>
+
+  <script type="text/javascript" src="projects/InExile/js/Entities.js"></script>
+  <script type="text/javascript" src="projects/InExile/js/GameWorld.js"></script>
+  <script type="text/javascript" src="projects/InExile/js/Player.js"></script>
+  <script type="text/javascript" src="projects/InExile/js/System.js"></script>
+  <script type="text/javascript" src="projects/InExile/js/GameController.js"></script>
   <div id="header"></div>
 </head>
+
 <body>
   <div id="navigation"></div>
   <div class="container body-content">
     <div id="content">
-      This is the page for InExile
+      <div class="row">
+        <div class="page-header" id="PageHeader">
+          <h1>InExile: <small>Phaser.io, JavaScript</small></h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="panel-body-game-800">
+          <div class=" game-area-800" id="gameWindow">
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <div class="panel-heading"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Instructions </div>
+      <div class="panel-body well-sm">
+        <div>
+          <ul>
+            <li><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Move Left</li>
+            <li><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Move Right</li>
+            <li><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span> Jump</li>
+            <li><span class="glyphicon glyphicon-minus" aria-hidden="true"></span> Attack</li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
+    <script type="text/javascript">
+      window.onload = main();
+    </script>
 </body>
+
 </html>

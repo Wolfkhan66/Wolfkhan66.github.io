@@ -3,6 +3,7 @@
   <script type="text/javascript" src="js/utility.js"></script>
   <div id="header"></div>
 </head>
+
 <body>
   <div id="navigation"></div>
   <p></p>
@@ -19,35 +20,36 @@
   <p></p>
   <div class="container body-content">
     <div id="content">
-      <div class="row">
-        <div class="col-sm-8 col-md-8 col-lg-8" id="Projects">
-          <h3 class="col-sm-offset-1">Latest Projects</h3>
-          <hr/>
-          <div id="projectList"></div>
-        </div>
-        <div class="col-sm-4 col-md-4 col-lg-4" id="AboutMe">
-          <h3 class="col-sm-offset-1">About Me</h3>
-          <hr/>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis urna rhoncus, varius diam eu, varius ante. Donec molestie, turpis id commodo lacinia, odio neque commodo tellus, sed commodo arcu dolor quis ligula. Aenean vel odio id tortor
-            tincidunt aliquet eget et ligula. Ut pharetra quam ut massa condimentum rutrum.
-          </p>
-          <p>
-            Proin convallis malesuada massa, elementum pretium erat mattis et. Suspendisse vitae eros in neque posuere pulvinar. Donec fermentum, mi non ultricies dignissim, augue erat hendrerit lectus, eu faucibus urna mauris quis ex. Morbi eu nunc est. Aliquam
-            erat nulla, hendrerit eu feugiat vulputate, accumsan vel magna. Maecenas at turpis ac lacus facilisis lobortis sit amet nec diam. Sed ut neque faucibus, pulvinar odio sit amet, finibus risus.
-          </p>
-        </div>
+      <div class="row" id="AboutMe">
+        <h3 class="col-sm-offset-1">About Me</h3>
+        <hr />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis urna rhoncus, varius diam eu, varius ante. Donec molestie, turpis id commodo lacinia, odio neque commodo tellus, sed commodo arcu dolor quis ligula. Aenean vel odio
+          id tortor
+          tincidunt aliquet eget et ligula. Ut pharetra quam ut massa condimentum rutrum.
+        </p>
+        <p>
+          Proin convallis malesuada massa, elementum pretium erat mattis et. Suspendisse vitae eros in neque posuere pulvinar. Donec fermentum, mi non ultricies dignissim, augue erat hendrerit lectus, eu faucibus urna mauris quis ex. Morbi eu nunc
+          est. Aliquam
+          erat nulla, hendrerit eu feugiat vulputate, accumsan vel magna. Maecenas at turpis ac lacus facilisis lobortis sit amet nec diam. Sed ut neque faucibus, pulvinar odio sit amet, finibus risus.
+        </p>
+      </div>
+      <div class="row" id="Projects">
+        <h3 class="col-sm-offset-1">Latest Projects</h3>
+        <hr />
+        <div id="projectList"></div>
       </div>
     </div>
     <script>
       $("#ProfileBanner").hide();
       $("#Projects").hide();
       $("#AboutMe").hide();
-      $("#ProfileBanner").fadeIn(2000, function () {
-        $("#Projects").fadeIn(2000, function () {
-          $("#AboutMe").fadeIn(2000);
+      $("#ProfileBanner").fadeIn(500, function() {
+        $("#AboutMe").fadeIn(1000, function() {
+          $("#Projects").fadeIn(1000);
         });
       });
     </script>
-  </body>
+</body>
+
 </html>
